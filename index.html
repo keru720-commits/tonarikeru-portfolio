@@ -302,6 +302,31 @@
   background: #f5f5f5;
 }
 
+@media (max-width: 600px) {
+
+  .cover-gallery {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .cover-gallery img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: none !important;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .cover-gallery img.work-cover {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+}
+
   </style>
 
 </head>
