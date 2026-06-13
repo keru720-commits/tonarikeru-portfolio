@@ -306,13 +306,15 @@
 @media (max-width: 600px) {
   .cover-gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
-  .cover-gallery img {
-    width: 100%;
-    height: auto;
+  .cover-gallery img,
+  .cover-gallery .work-cover {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
   }
 }
 
